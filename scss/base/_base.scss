@@ -1,9 +1,20 @@
+/* base */
 // Universal selector
 * {
 	box-sizing: border-box;
 }
-// List items
+
+// List elements
+.nav__item {
+	list-style-type: none;
+}
 
 // Paragraphs
+p {
+	text-align: left;
+}
 
 // Anchor tags
+a {
+	text-decoration: none;
+}

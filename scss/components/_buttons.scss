@@ -1,0 +1,8 @@
+/* buttons */
+.btn-- {
+	@each $key, $color in $button-colors {
+		&#{$key}.theme__colors {
+			background-color: map-get($button-colors, $key);
+		}
+	}
+}

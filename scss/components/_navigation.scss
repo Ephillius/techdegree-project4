@@ -1,0 +1,13 @@
+/* navigation */
+.nav {
+	padding-left: 0;
+	&__item a {
+		display: block;
+		padding: 15px 20px;
+		&:hover {
+			background-color: #58e1c1;
+			border-radius: 5px;
+			color: #fff;
+		}
+	}
+}

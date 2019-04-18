@@ -1,18 +1,40 @@
+/* variables */
 // Fonts
+$sans-serif: 'Nunito', sans-serif;
 
-
-
-
-
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
 
 // Breakpoints
 
-
-
-
-
-
-
-
-
 // Colors
+$button-colors: (
+    info    : #927bc1,
+    warning : #fd7856,
+    error   : #e4757a,
+    success : #63cc82,
+    default : #51ddfc
+  );
+
+$text-colors: (
+	primary : #888,
+	headline: #58e1c1,
+	link    : #51ddfc,
+);
+
+$grid-colors: (
+	1 : #927bc1,
+    2 : #fd7856,
+    3 : #deb2ee,
+    4 : #7ee6fd,
+    5 : #88d9a0,
+    6 : #4da2bb,
+    7 : #ec9fa3,
+    8 : #fd9f85,
+    9 : #e4757a,
+    10: #63cc82,
+    11: #51ddfc,
+    12: #80e8d1 
+);

@@ -1,14 +1,8 @@
-// **************************************
-// components/_index.scss
-// used to import individual components
-// **************************************
+// Import partials
 
-// import the grid component
-@import 'grid';
-
-// NOTE: import other components here:
 @import 'typography';
+@import 'grid';
 @import 'navigation';
+@import 'forms';
 @import 'images';
 @import 'buttons';
-@import 'forms';
