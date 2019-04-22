@@ -1,1 +1,5 @@
 /* functions */
+// Value Calculation
+@function em($target, $context: $font-size) {
+	@return ($target / $context) * 1em;
+}

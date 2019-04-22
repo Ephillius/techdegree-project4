@@ -1,4 +1,12 @@
 /* mixins */
+// Google Font verifier
+@if variable-exists(google--font-nunito) {
+	@import url($google--font-nunito);
+}
+
 // Media Queries
+@media (min-width: 768px) {
+	
+}
 
 // Flexbox Settings

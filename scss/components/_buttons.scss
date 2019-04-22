@@ -3,6 +3,16 @@
 	@each $key, $color in $button-colors {
 		&#{$key}.theme__colors {
 			background-color: $color;
+			display: block;
+			width: 100%;
+			padding: 10px 20px;
+			margin: 20px 0;
+			border-style: none;
+			border-radius: 8px;
+			text-align: center;
+			text-transform: uppercase;
+			color: white;
+			font-weight: $bold;
 		}
 	}
 }

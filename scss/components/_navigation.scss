@@ -1,9 +1,11 @@
 /* navigation */
 .nav {
 	padding-left: 0;
-	&__item a {
-		display: block;
+	list-style-type: none;
+	&__item {
 		padding: 15px 20px;
+		color: #000;
+		font-weight: $light;
 		&:hover {
 			background-color: #58e1c1;
 			border-radius: 5px;
