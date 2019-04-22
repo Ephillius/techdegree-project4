@@ -8,10 +8,7 @@ $semibold: 500;
 $bold: 700;
 
 // Breakpoints
-$breakpoints: (
-	'mobile' : 480px,
-	'desktop': 1400px
-);
+$break-desktop: 769px;
 
 // Colors
 $button-colors: (

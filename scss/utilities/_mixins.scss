@@ -1,17 +1,4 @@
 /* mixins */
 // Media Queries
-@media screen and (min-width: 481px) {
-	.container {
-
-	}
-}
 
 // Flexbox Settings
-.container {
-	display: flex;
-	flex-direction: column;
-	margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    text-align: center; 
-}
