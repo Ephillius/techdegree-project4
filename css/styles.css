@@ -482,4 +482,173 @@ a {
   font-weight: 700;
 }
 
+.grid__col--1.theme__colors {
+  background-color: #927bc1;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--1.theme__colors + .grid__col--1.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--2.theme__colors {
+  background-color: #fd7856;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--2.theme__colors + .grid__col--2.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--3.theme__colors {
+  background-color: #deb2ee;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--3.theme__colors + .grid__col--3.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--4.theme__colors {
+  background-color: #7ee6fd;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--4.theme__colors + .grid__col--4.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--5.theme__colors {
+  background-color: #88d9a0;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--5.theme__colors + .grid__col--5.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--6.theme__colors {
+  background-color: #4da2bb;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--6.theme__colors + .grid__col--6.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--7.theme__colors {
+  background-color: #ec9fa3;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--7.theme__colors + .grid__col--7.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--8.theme__colors {
+  background-color: #fd9f85;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--8.theme__colors + .grid__col--8.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--9.theme__colors {
+  background-color: #e4757a;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--9.theme__colors + .grid__col--9.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--10.theme__colors {
+  background-color: #63cc82;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--10.theme__colors + .grid__col--10.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--11.theme__colors {
+  background-color: #51ddfc;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--11.theme__colors + .grid__col--11.theme__colors {
+  margin-top: 10px;
+}
+.grid__col--12.theme__colors {
+  background-color: #80e8d1;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 400;
+}
+.grid__col--12.theme__colors + .grid__col--12.theme__colors {
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */
