@@ -1,5 +1,12 @@
 /* buttons */
 .btn {
 	@include bg-colors($button-colors);
+}
+
+[class^=btn--] {
+	@include brdr;
 	@include center-content;
+	color: clr(contrast);
+	text-transform: uppercase;
+	margin: 20px 0;
 }

@@ -6,3 +6,23 @@
 
 
 // Nav Items
+%nav-item-horz {
+	@include mq(medium) {
+		display: inline-block;
+	}
+}
+
+%nav-item-link {
+	font-weight: $light;
+	text-align: center;
+	font-size: em(18px);
+	display: block;
+	padding: 15px 20px;
+	color: clr(overall);
+}
+
+%nav-item-on {
+	color: clr(contrast);
+	background-color: $viking;
+	border-radius: 5px;
+}

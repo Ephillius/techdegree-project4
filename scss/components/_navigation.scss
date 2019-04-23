@@ -2,14 +2,14 @@
 .nav {
 	padding-left: 0;
 	list-style-type: none;
+	@extend %nav-item-horz;
 	&__item {
-		padding: 15px 20px;
-		color: #000;
-		font-weight: $light;
-		&:hover {
-			background-color: #58e1c1;
-			border-radius: 5px;
-			color: #fff;
+		a {
+			@extend %nav-item-link;
+			text-decoration: none;
+			&:hover {
+				@extend %nav-item-on
+			}
 		}
 	}
 }
