@@ -10,3 +10,35 @@
 }
 
 // Flexbox Settings
+@mixin center-content {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin center-grid {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Buttons
+@mixin btn {
+	display: block;
+	padding: 15px 20px;
+	border-style: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: clr(contrast);
+	font-weight: $bold;	
+}
+
+@mixin bg-colors($map) {
+	@each $key, $color in $map {
+		&--#{$key}.theme__colors {
+			background-color: $color;
+		}
+	}
+}

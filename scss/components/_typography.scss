@@ -5,8 +5,15 @@
 	}
 	&--primary {
 		font-weight: $bold;
-		color: map-get($text-colors, important);
-		margin-left: 20px;
+
+		// 32px is the default h1 size value 
+		// font-size is saved here for possible future design alterations
+		font-size: em(32px); 
+		line-height: (36px / 32px);
+
+		// both bottom and left values make use of the function that turns px into em
+		margin: 0  0 em(40px, 32px) em(20px, 32px);	
+		color: clr(important);
 	}
 }
 
@@ -18,6 +25,6 @@
 	font-size: 1.7em;
 	font-weight: $light;
 	line-height: 33px;
-	border-left: 10px solid map-get($text-colors, headline);
+	border-left: 10px solid clr(important);
 	border-radius: 2.5%;
 }

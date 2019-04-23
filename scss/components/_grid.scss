@@ -16,6 +16,7 @@
 
   // .grid__col
   &__col {
+    @include bg-colors($grid-colors);
 
     // create grid columns dynamically
     // loop through each column size

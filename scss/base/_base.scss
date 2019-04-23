@@ -6,15 +6,11 @@
 
 // Flexbox
 .container {
+	@include center-content;
 	font-size: $font-size;
 	line-height: ($line/$font-size);
 	font-family: $font-family;
-	color: map-get($text-colors, primary);
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+	color: clr(overall);
 }
 
 .card {
@@ -31,5 +27,5 @@
 // Links
 
 .link {
-	color: map-get($text-colors, link);
+	color: clr(link);
 }

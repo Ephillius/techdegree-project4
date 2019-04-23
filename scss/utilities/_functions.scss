@@ -1,5 +1,12 @@
 /* functions */
 // Value Calculation
+//Pixel to Em
 @function em($target, $context: $font-size) {
 	@return ($target / $context) * 1em;
+}
+
+// Font Color Picker
+// Picks the specific color name for the desired element
+@function clr($item) {
+	@return map-get($text-colors, $item);
 }
