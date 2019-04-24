@@ -6,8 +6,8 @@
 
 // Flexbox
 .container {
-	@include center-content;
-	padding: 20px;
+	@include center;
+	padding: 20px 40px;
 	font-size: $font;
 	line-height: ($line / $font);
 	font-family: $font-family;
@@ -16,16 +16,17 @@
 }
 
 .card {
-	@include center-card;
-	text-align: left;
-	line-height: 25px;
+	@include center;
+	p {
+		letter-spacing: 0.6px;
+		text-align: left;	 
+	}
 }
 
 // List elements
 
 
 // Links
-
 .link {
 	color: clr(link);
 	text-decoration: none;

@@ -5,7 +5,7 @@
 
 [class^=btn--] {
 	@include brdr;
-	@include center-content;
+	width: 100%;
 	color: clr(contrast);
 	text-transform: uppercase;
 	margin: 20px 0;

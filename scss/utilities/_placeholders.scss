@@ -21,8 +21,27 @@
 	color: clr(overall);
 }
 
-%nav-item-on {
+%nav-item-hover {
 	color: clr(contrast);
 	background-color: $viking;
 	border-radius: 5px;
+}
+
+// Headlines
+%hdln-prim {
+	font-weight: $bold;
+	letter-spacing: $letter;
+
+	// 32px is the default h1 size value 
+	// font-size is saved here for possible future design alterations
+	font-size: em(32px); 
+	line-height: (36px / 32px);
+
+	// both bottom and left values make use of the function that turns px into em
+	margin: 0  0 em(40px, 32px) em(20px, 32px);	
+	color: clr(important);
+}
+
+%hdln-sec {
+	font-weight: $light;
 }

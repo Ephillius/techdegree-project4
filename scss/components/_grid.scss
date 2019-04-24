@@ -6,17 +6,17 @@
     @include mq(medium) {
         margin-top: 0;
     }
-    &__row {
+    @include e(row) {
         display: flex;
         flex-direction: column;
         @include mq(medium) {
             flex-direction: row;
         }
     }
-    &__col {
+    @include e(col) {
         @include bg-colors($grid-colors) {
             @include brdr;
-            padding-left: 10px;
+            text-align: left;
         }
         @for $i from 1 through 12 {
             &--#{$i} {

@@ -4,6 +4,19 @@
 	@import url($google--font-nunito);
 }
 
+// BEM selectors
+@mixin e($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+
+@mixin m($modifier) {
+	&--#{$modifier} {
+		@content;
+	}
+}
+
 // Media Queries
 @mixin mq($break) {
 	@if $break == 'medium' {
@@ -14,14 +27,7 @@
 }
 
 // Flexbox Settings
-@mixin center-content {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@mixin center-card {
-	width: 90%;
+@mixin center {
 	margin-left: auto;
 	margin-right: auto;
 }
