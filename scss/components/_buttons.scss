@@ -4,9 +4,7 @@
 }
 
 [class^=btn--] {
-	@include brdr;
+	@include btn;
 	width: 100%;
-	color: clr(contrast);
-	text-transform: uppercase;
 	margin: 20px 0;
 }

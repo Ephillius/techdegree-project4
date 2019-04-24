@@ -7,12 +7,15 @@
 // Flexbox
 .container {
 	@include center;
-	padding: 20px 40px;
+	padding: em(20px) em(40px);
 	font-size: $font;
 	line-height: ($line / $font);
 	font-family: $font-family;
 	color: clr(overall);
 	text-align: center;
+	@include mq(medium) {
+		width: 80%;
+	}
 }
 
 .card {

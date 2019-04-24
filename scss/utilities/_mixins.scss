@@ -17,6 +17,20 @@
 	}
 }
 
+// Screen reader
+// Optional for this project but useful in the future
+// &--hidden could just use the 'display: hidden;' argument
+@mixin srt {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
 // Media Queries
 @mixin mq($break) {
 	@if $break == 'medium' {
@@ -33,12 +47,21 @@
 }
 
 // Buttons
-@mixin brdr {
+@mixin btn {
+	padding: 15px 30px;
+	border: 0;
+	border-radius: $br--curve;
+	color: $white;
+	text-transform: uppercase;
+	font-size: em(14px);
+	font-weight: $bold;
 	display: block;
-	padding: 10px 20px;
-	border-style: none;
-	border-radius: 5px;
-	font-weight: $bold;	
+	&:hover {
+	opacity: .75;
+	}
+	&:active {
+	opacity: initial;
+	}	
 }
 
 @mixin bg-colors($map) {

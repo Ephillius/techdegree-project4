@@ -1,5 +1,21 @@
 /* forms */
 // Form
 .form {
-	
+	@include e(label) {
+		@include m(hidden) {
+			@include srt;
+		}
+		display: block;
+		margin-bottom: em(10px);
+	}
+	@include e(input) {
+		width: 100%;
+		font-size: em(18px);
+		font-weight: $bold;
+		color: clr(overall);
+		padding: em(15px, 18px);
+		margin-bottom: em(20px, 18px);
+		border-style: none;
+		border-bottom: 6px solid clr(important);
+	}
 }
