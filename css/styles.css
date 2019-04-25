@@ -425,7 +425,7 @@ ul {
   padding-left: 0;
 }
 
-a {
+.nav__item a {
   text-decoration: none;
 }
 
