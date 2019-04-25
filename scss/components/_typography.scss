@@ -1,22 +1,31 @@
 /* typography */
+// Overall text color
+.container {
+  color: clr(color-body);
+}
+
+// Links
+.link {
+	@extend %link;
+}
+
+// Headlines
 .headline {
-	@include m(primary) {
-		@extend %hdln-prim;
+	&--primary {
+		@extend %hdln--prim;
 	}
-	@include m(secondary) {
-		@extend %hdln-sec;
-		text-align: left;
+	&--secondary {
+		@extend %hdln--sec;
 	}
 }
 
+// Block quote
 .blockquote {
+	border-left: 10px solid clr(color-primary);
+	border-radius: $br--curve;
 	margin: em(32px, 24px) 7%;
 	padding: 0 0 0 5%;
 	font-style: italic;
 	font-size: em(24px);
-	font-weight: $light;
 	line-height: (29px / 24px);
-	letter-spacing: $letter;
-	border-left: em(10px, 24px) solid clr(important);
-	border-radius: 2.5%;
 }

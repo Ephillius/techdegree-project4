@@ -1,8 +1,16 @@
 /* images */
-.img--avatar {
-	
-}
+// Images
+.img {
+	&--avatar {
+		@extend %img;
+	}	
+	&--frame {
+		@extend %img;
+		@extend %img--border;
+		padding: em(10px);
+	}
+	&--logo {
+		@extend %img;
 
-.img--frame {
-	width: 100%;
+	}
 }

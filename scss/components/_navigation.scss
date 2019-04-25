@@ -1,14 +1,12 @@
 /* navigation */
 .nav {
-	padding-left: 0;
-	list-style-type: none;
-	@include e(item) {
-		@extend %nav-item-horz;
+	&__item {
+		@extend %nav-item--horz;
 		a {
-			@extend %nav-item-link;
+			@extend %nav-item--link;
 			text-decoration: none;
 			&:hover {
-				@extend %nav-item-hover
+				@extend %nav-item--hover
 			}
 		}
 	}

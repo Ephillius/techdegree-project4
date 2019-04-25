@@ -1,28 +1,30 @@
 /* grid */
+// Container
+.container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: $max-width;
+}
+
 // Grid
 .grid {
-    margin-top: 10px;
-    flex-basis: 100%;
-    @include mq(medium) {
-        margin-top: 0;
-    }
-    @include e(row) {
-        display: flex;
-        flex-direction: column;
+    &__row {
+        padding: em(16px) em(10px);
+        @include flex($dir: column);
         @include mq(medium) {
-            flex-direction: row;
-            max-width: 1050px;
+            @include flex($dir: row);
         }
     }
-    @include e(col) {
-        @include bg-colors($grid-colors) {
-            @include btn;
-            text-align: left;
-        }
+    &__col {
         @for $i from 1 through 12 {
             &--#{$i} {
-                @extend .grid;
+                @include flex($dir: column);
+                padding: em(10px);
+                margin-top: em(20px);
                 @include mq(medium) {
+                    margin-top: 0;
+                    @include flex($dir: row, $just: space-evenly,
+                        $ali: flex-start);
                     flex-basis: #{$i / 12 * 100 + "%"} ;
                 }
             }
@@ -33,8 +35,26 @@
 
 [class^=grid__col] {
     & + & {
+        margin-top: em(8px);
         @include mq(medium) {
-            margin-left: 10px;
+            margin-top: 0;
+            margin-left: em(10px);
         }
+    }
+}
+
+// Grid colors
+@each $key, $color in $grid-colors {
+    .grid__col--#{$key}.theme__colors {
+        background-color: $color;
+        border-radius: $br--curve;
+    }
+}
+
+// Centered grid
+.centered {
+    @include mq(medium) {
+        margin-left: auto;
+        margin-right: auto;        
     }
 }
