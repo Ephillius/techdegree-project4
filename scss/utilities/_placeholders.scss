@@ -60,11 +60,12 @@
 %btn {
 	color: clr(color-contrast);
 	text-transform: uppercase;
+	font-weight: $bold;
 	padding: em(15px);
 	margin-bottom: em(15px);
 	border: none;
 	border-radius: $br--curve;
 	&:hover {
-		cursos: pointer;
+		cursor: pointer;
 	}
 }
