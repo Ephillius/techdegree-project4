@@ -1,36 +1,4 @@
 /* mixins */
-// Google Font verifier
-@if variable-exists(google--font-nunito) {
-	@import url($google--font-nunito);
-}
-
-// BEM selectors
-@mixin e($element) {
-	&__#{$element} {
-		@content;
-	}
-}
-
-@mixin m($modifier) {
-	&--#{$modifier} {
-		@content;
-	}
-}
-
-// Screen reader
-// Optional for this project but useful in the future
-// &--hidden could just use the 'display: hidden;' argument
-@mixin srt {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-}
-
 // Media Queries
 @mixin mq($break) {
 	@if $break == 'medium' {
@@ -41,34 +9,10 @@
 }
 
 // Flexbox Settings
-@mixin center {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-// Buttons
-@mixin btn {
-	padding: 15px 30px;
-	border: 0;
-	border-radius: $br--curve;
-	color: $white;
-	text-transform: uppercase;
-	font-size: em(14px);
-	font-weight: $bold;
-	display: block;
-	&:hover {
-	opacity: .75;
-	}
-	&:active {
-	opacity: initial;
-	}	
-}
-
-@mixin bg-colors($map) {
-	@each $key, $color in $map {
-		&--#{$key}.theme__colors {
-			background-color: $color;
-			@content;
-		}
-	}
+@mixin flex($dis: flex, $dir: null, $wrap: null, $just: null, $ali: null) {
+	display: $dis;
+	flex-direction: $dir;
+	flex-wrap: $wrap;
+	justify-content: $just;
+	align-items: $ali;
 }
