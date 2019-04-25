@@ -1,7 +1,6 @@
 /* variables */
 // Fonts
-$google--font-nunito: url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900');
-$font-family        : 'Nunito', sans-serif;
+$font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Weights
 $light     : 300;
@@ -12,16 +11,19 @@ $ultra-bold: 900;
 // Base Text
 $font  : 16px;
 $line  : 24px;
-$letter: 0px;
+$letter: 0.3px;
 
 // Styling
+$max-width: 1050px; 
 $br--curve: 5px;
 
 // Breakpoints
 $break-med: 768px;
 
-// Colors
+// COLORS
 // Palette
+$white          : #fff;
+$gray           : #888;
 $purple-majesty : #927bc1;
 $coral          : #fd7856;
 $sunglo         : #e4757a;
@@ -35,10 +37,6 @@ $sea-pink       : #ec9fa3;
 $vivid-tangerine: #fd9f85;
 $riptide        : #80e8d1;
 $viking         : #58e1c1;
-
-// Basic ones
-$white         : #fff;
-$gray          : #888;
 
 // Groups
 $button-colors: (
@@ -60,8 +58,8 @@ $grid-colors: (
 );
 
 $text-colors: (
-    contrast : $white,
-    overall  : $gray,
-    important: $viking,
-    link     : $malibu
+    color-body     : $gray,
+    color-contrast : $white,
+    color-primary  : $viking,
+    color-secondary: $malibu
 )
