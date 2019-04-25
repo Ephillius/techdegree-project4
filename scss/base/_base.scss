@@ -2,36 +2,22 @@
 // Base
 *{
 	box-sizing: border-box;
-}
-
-// Flexbox
-.container {
-	@include center;
-	padding: em(20px) em(40px);
-	font-size: $font;
-	line-height: ($line / $font);
 	font-family: $font-family;
-	color: clr(overall);
-	text-align: center;
-	@include mq(medium) {
-		width: 80%;
-	}
+	letter-spacing: $letter;
 }
 
-.card {
-	@include center;
-	p {
-		letter-spacing: 0.6px;
-		text-align: left;	 
-	}
+// Paragraphs
+p {
+	line-height: 1.5;	 
 }
 
 // List elements
-
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 
 // Links
-.link {
-	color: clr(link);
-	text-decoration: none;
-	font-weight: $bold;
+a {
+  text-decoration: none;
 }
