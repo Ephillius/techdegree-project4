@@ -1,47 +1,70 @@
 /* placeholders */
 // Links
-
+%link {
+	color: clr(color-secondary);
+	font-weight: $bold;
+}
 
 // Images
+%img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
 
+%img--border {
+	border: 1px solid clr(color-body);
+}
 
 // Nav Items
-%nav-item-horz {
+%nav-item--horz {
 	@include mq(medium) {
 		display: inline-block;
+		& + & {
+			margin-left: 10px;
+		}
 	}
 }
 
-%nav-item-link {
+%nav-item--link {
 	font-weight: $light;
 	text-align: center;
 	font-size: em(18px);
 	display: block;
 	padding: 15px 20px;
-	color: clr(overall);
+	color: clr(color-body);
+	@include mq(medium) {
+		padding: 10px;
+	}
 }
 
-%nav-item-hover {
-	color: clr(contrast);
-	background-color: $viking;
+%nav-item--hover {
+	color: clr(color-contrast);
+	background-color: clr(color-primary);
 	border-radius: 5px;
 }
 
 // Headlines
-%hdln-prim {
-	font-weight: $bold;
-	letter-spacing: $letter;
-
-	// 32px is the default h1 size value 
-	// font-size is saved here for possible future design alterations
-	font-size: em(32px); 
-	line-height: (36px / 32px);
-
-	// both bottom and left values make use of the function that turns px into em
+%hdln--prim {
 	margin: 0  0 em(40px, 32px) em(20px, 32px);	
-	color: clr(important);
+	color: clr(color-primary);
 }
 
-%hdln-sec {
+%hdln--sec {
 	font-weight: $light;
+	margin-top: 20px;
+  	margin-bottom: 20px;
+}
+
+%btn {
+	color: clr(color-contrast);
+	text-transform: uppercase;
+	padding: em(15px);
+	margin-bottom: em(15px);
+	border: none;
+	border-radius: $br--curve;
+	&:hover {
+		cursos: pointer;
+	}
 }
